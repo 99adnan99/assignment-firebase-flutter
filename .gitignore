@@ -43,3 +43,12 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+build/
+.dart_tool/
+.packages
+pubspec.lock
+ios/Flutter/Flutter.framework
+android/.gradle
+firebase_options.dart
+# stop coding share

@@ -1,7 +1,0 @@
-build/
-.dart_tool/
-.packages
-pubspec.lock
-ios/Flutter/Flutter.framework
-android/.gradle
-firebase_options.dart
