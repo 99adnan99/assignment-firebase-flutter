@@ -29,6 +29,8 @@ class Staff {
 
 // Staff input form page
 class StaffFormPage extends StatefulWidget {
+  const StaffFormPage({super.key});
+
   @override
   _StaffFormPageState createState() => _StaffFormPageState();
 }
@@ -41,7 +43,9 @@ class _StaffFormPageState extends State<StaffFormPage> {
   void _submitForm() {
     if (_nameController.text.isEmpty ||
         _idController.text.isEmpty ||
-        _ageController.text.isEmpty) return;
+        _ageController.text.isEmpty) {
+      return;
+    }
 
     final newStaff = Staff(
       name: _nameController.text,
@@ -88,7 +92,7 @@ class _StaffFormPageState extends State<StaffFormPage> {
 // Staff list page
 class StaffListPage extends StatefulWidget {
   final Staff staff;
-  StaffListPage({required this.staff});
+  const StaffListPage({super.key, required this.staff});
 
   @override
   _StaffListPageState createState() => _StaffListPageState();
